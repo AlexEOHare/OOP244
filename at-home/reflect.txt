@@ -1,0 +1,8 @@
+1.I have selected a type long long for the ISBN number. This the the smallest variable we can use that will store the data we need and since we have no need for decimals float variables are not needed.
+2.I would create a member function specifically for validating the ISBN#.
+3.I had a lot of trouble wrapping my head around the math logic for this program, I still don't feel like I found the most optimal way of doing the math and getting the information I needed.
+4.This workshop was good for helping me learn how to format the output of the cout command.
+
+Quiz Reflection
+
+I have no received a marked quiz so therefore I have nothing to reflect upon.
