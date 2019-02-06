@@ -44,7 +44,9 @@ namespace sict {
 				firstSum = (isbn / 1000000000000) + ((isbn / 10000000000) % 10) + ((isbn / 100000000) % 10) + ((isbn / 1000000) % 10) + ((isbn / 10000) % 10) + ((isbn / 100) % 10);
 				secondSum = ((((isbn / 100000000000) % 10) + ((isbn / 1000000000) % 10) + ((isbn / 10000000) % 10) + ((isbn / 100000) % 10) + ((isbn / 1000) % 10) + ((isbn / 10) % 10))*3);
 				sum = firstSum + secondSum;
-				rounded = ((sum/ 10)+1) * 10;
+				if ((sum % 10) != 0) {
+					rounded = ((sum / 10) + 1) * 10;
+				}
 				diff = rounded - sum;
 
 				if (diff == checkDig) {
